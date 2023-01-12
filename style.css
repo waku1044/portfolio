@@ -7,9 +7,6 @@
 .content{
 	width: 100vw;
 	background: url(imagenes/footer.jpg);
-/*	background-position: center;*/
-/*	background-repeat: no-repeat;*/
-
 }
 header{
 	height: 500px;
@@ -75,7 +72,7 @@ nav a:hover{
 	color:cyan;
 }
 main{
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	
 }
@@ -161,7 +158,7 @@ footer{
 	background-position: center;
 	color: gold;
 }
-@media screen and (max-width:550px){
+@media screen and (max-width:700px){
 	header{
 		flex-direction: column;
 	}
