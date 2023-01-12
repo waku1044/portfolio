@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<header>
+			<div class="fotoPerfil">
+				<img src="imagenes/fotoperfil.png" alt="fotoPerfil">
+				<h3>Front-end Developer</h3>
+				
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#sobremi">Sobre mi</a></li>
+					<li><a href="#habilidades">Habilidades</a></li>
+					<li><a href="#proyectos">Proyectos</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			
+			<a name='sobremi'/>
+			<section class="sobre_mi">
+				<h2>&pr; Sobre mi &sc;</h2>
+				<p>¡Hola! Mi nombre es <b>Walter Gimenez</b> soy de Argentina, me encanta la programacion y la creacion de diseños ,tambien me gusta practicar la mayor parte del tiempo para mejorar mis habilidades.
+				Me considero muy curioso, proactivo, puntual y responsable sin dejar de enfocarme en el proyecto.
+				Nunca dejo de aprender nuevas tecnologías y obtener nuevas experiencias en este maravilloso mundo.</p>
+
+			</section>
+			<a name='habilidades'/>
+			<section class="habilidades">
+				<h2>&pr; Habilidades &sc;</h2>
+				<div class="logos">
+					<img src="imagenes/htmllogo.png"  alt="logo Html">
+					<img src="imagenes/csslogo.png" alt="logo Css">
+					<img src="imagenes/logojs.png" alt="logo Js">
+					<img src="imagenes/logobootstrap.png" class="bootstrap" alt="Boostrap">
+					<img src="imagenes/logotailwind.png" alt="Tailwind">
+					<img src="imagenes/logoreact.png" alt="Reactjs">
+					<img src="imagenes/logogit.png" alt="git">
+				</div>
+			</section>
+			<a name='proyectos'/>
+			<section class="proyectos"><h2>&pr; Proyectos &sc;</h2></section>
+			<a name='contacto'/>
+			<section class="contacto">
+				<h2>&pr; Contacto &sc;</h2>
+				<form action="" id="formulario">
+		        	<!-- <label for="nombreapellido" >Nombre y Apellido</label> -->
+		        	<input type="text" id="nombreapellido" class="input-padron" placeholder="Nombre / Empresa" required>
+
+		        	<!-- <label for="email" >Correo Electronico</label> -->
+		        	<input type="email" id="email" placeholder="Email@dominio.com" class="input-padron" required>
+
+		        	<!-- <label for="telefono" >Teléfono</label> -->
+		        	<input type="tel" id="telefono" placeholder="(xx) xxxx xxxx" class="input-padron" required>
+
+	                
+	                <!-- <label for="mensaje" >Mensaje</label> -->
+	                <textarea  id="mensaje" placeholder="Escribe tu mensaje aqui" class="input-padron"></textarea>
+
+	                <input type="submit" value="Enviar" id="enviar">
+                
+                </form>
+			</section>
+		</main>
+		<footer>
+			<p>
+				&copy; Todos los derechos reservados.<br>
+				Diseñado por <strong><i>wktec</i></strong>
+			</p>	
+			
+		</footer>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
