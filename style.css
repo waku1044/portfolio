@@ -87,6 +87,7 @@ main{
 }
 main h2{
 	color: gold;
+	text-shadow: 5px 5px 5px brown;
 }
 .sobre_mi{
 	margin:0px 10px;
@@ -100,7 +101,6 @@ main h2{
 	font-size: 1.2em;
 	padding: 30px;
 	color: #84de02;
-	text-shadow: 5px 5px 4px grey;
 }
 .habilidades{
 	font-size: 1.5em;
@@ -191,18 +191,23 @@ footer p{
 	.menu{
 		visibility: visible;
 		width: 100%;
+		position: sticky;
+		top: 0;
 		/*display: flex;
 		flex-direction: column;
 		align-items: center;*/
 		background: brown;
+		opacity: .5;
+	}
+	.menu:hover{
+		opacity: 1;
 	}
 	.menu p{
 		color: #fff;
 		font-size: 1.5em;
 		text-align: center;
 	}
-	.menu:hover{
-		opacity: .5;
+	.items{
 	}
 	.items li{
 		list-style: none;

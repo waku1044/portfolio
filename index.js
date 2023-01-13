@@ -2,7 +2,6 @@ const $menu =  document.querySelector('.menu p');
 const $items = document.querySelector('.items');
 
 function toogle(){
-	console.log('primero' + $menu.innerHTML)
 	switch($menu.innerHTML){
 	case 'Menu':
 		$menu.innerHTML = 'X';
@@ -18,4 +17,14 @@ function toogle(){
 	}
 }
 
-$menu.onclick = toogle
+let options = document.querySelectorAll('.option');
+function hiddenOption(e){
+	console.log(this)
+	$items.classList.add('hidden');
+	$menu.innerHTML = 'Menu';
+	
+	
+
+}
+$menu.onclick = toogle;
+options.onclick = hiddenOption;
