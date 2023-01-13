@@ -141,10 +141,13 @@ main h2{
 input{
 	width: 100%;
 	height: 50px;
+	background: #f2f2f2;
 }
 textarea{
 	width: 100%;
 	height: 80px;	
+	background: #f2f2f2;
+
 }
 #enviar{
 background: orange;
