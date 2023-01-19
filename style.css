@@ -162,20 +162,34 @@ transition: 1s all;
 	background: forestgreen;
 }
 footer{
-	background: brown;
+	padding-top: 30px;
 	display:flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	gap: 20px;
+/*	justify-content: center;*/
 	font-size: 1.4em;
 	margin: 30px auto 0;
-	height: 200px;
-	background-image: url(imagenes/footer1.jpeg);
-	background-position: center;
+	background: linear-gradient(#444,#f7f);
 	color: gold;
+}
+.logoredes{
+	
+	width: 30%;
+	margin-right: 60px;
+	display:flex;
+	justify-content:space-around;
+
+}
+.logoredes img{
+	width: 50px;
 }
 footer p{
 	display: inline-block;
 	padding: 10px 30px;
+}
+.logoredes img:lastchild{
+	fill: #fff;
 }
 @media screen and (max-width:740px){
 	nav{
