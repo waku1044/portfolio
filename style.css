@@ -123,32 +123,31 @@ main h2{
 	text-align: center;	
 }
 .proyecto1 , .proyecto2, .proyecto3{
-	width: 80%;
-/*	height: 300px;*/
-	margin: 20px auto;
-	border: 2px solid #000;
-/*	position: relative;*/
-	background-image: url(imagenes/fotojuego1.png);background-size: 100%;background-position: left;
+	margin: 30px auto;
+	padding: 20px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	background-image:url(imagenes/fotojuego1.png);
 	align-items: center;
-
-/*	overflow: hidden;*/
+	gap: 20px;
+	
 }
-.imgproy1{
-	margin: 30px;
-	width: 70%;
-
+.imglink{
+	width: 100px;
 }
 i{
 	color: orange;
 }
 .proyecto1 .descripcion{
-	background: linear-gradient(gold,black,cyan);
-	border-radius: 25px;
+	background-color:  rgb(194 100 255 / 79%);
+	width: 70%;
+	color: yellowgreen;
+	font-weight: bold;
 	padding: 20px;
-	color: yellow;
-	text-shadow: 3px 3px 3px #000;
+	text-shadow: 3px 3px 5px #000;
+}
+p:first-child{
+	color: yellowgreen;
 }
 .proyecto1 h2,.proyecto2 h2{
 	padding: 20px;
@@ -162,12 +161,15 @@ i{
 	align-items: center;
 }
 .proyecto2 .descripcion{
+	background-color:  rgb(194 100 255 / 79%);
+	width: 50%;
+	font-weight: bold;
 	padding: 20px;
 	color: yellow;
 	text-shadow: 3px 3px 3px #000;
 }
 .codigo-link{
-	width:50%;
+	
 /*	background: brown;*/
 	display: flex;
 	flex-direction: column;
@@ -176,9 +178,10 @@ i{
 	gap: 10px;
 }
 .btn{
+	width: 300px;
 	border-radius: 25px;
 	padding: 10px 20px;
-	background:forestgreen;
+	background:brown;
 	text-decoration: none;
 	color: #fff;
 	box-shadow: 0px 6px 1px #444;
@@ -187,9 +190,7 @@ i{
 	transform: translate(0 ,6px);
 	box-shadow: 0 0 #444;
 }
-.proyecto1 a{
-	width: 30%;
-}
+
 .proyecto1  p, .proyecto2 p{
 /*	padding: 20px;*/
 
@@ -330,5 +331,10 @@ footer p{
 		color: orange;
 		border: 1px solid #000;
 
+	}
+}
+@media screen and (max-width:650px){
+	.descripcion{
+		display: none;
 	}
 }
