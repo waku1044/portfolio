@@ -149,7 +149,7 @@ i{
 p:first-child{
 	color: yellowgreen;
 }
-.proyecto1 h2,.proyecto2 h2{
+.proyecto1 h2,.proyecto2 h2 . proyecto3{
 	padding: 20px;
 	color: #ff2052;
 	text-decoration:underline;
@@ -161,13 +161,19 @@ p:first-child{
   background-position: center;
 	align-items: center;
 }
-.proyecto2 .descripcion{
+.proyecto2 .descripcion , .proyecto3 .descripcion{
 	background-color:  rgb(194 100 255 / 79%);
 	width: 50%;
 	font-weight: bold;
 	padding: 20px;
 	color: yellow;
 	text-shadow: 3px 3px 3px #000;
+}
+.proyecto3{
+	background-image: url(imagenes/encriptador.png);
+  background-size: 100%;
+  background-position:center;
+	align-items: center;
 }
 .codigo-link{
 	display: flex;
