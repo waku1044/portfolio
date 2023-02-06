@@ -47,17 +47,25 @@
 			<section class="habilidades">
 				<h2>&pr; Habilidades &sc;</h2>
 				<div class="logos">
-					<img src="imagenes/htmllogo.png"  alt="logo Html">
-					<img src="imagenes/csslogo.png" alt="logo Css">
-					<img src="imagenes/logojs.png" alt="logo Js">
-					<img src="imagenes/logobootstrap.png" class="bootstrap" alt="Boostrap">
-					<img src="imagenes/logotailwind.png" alt="Tailwind">
-					<img src="imagenes/logoreact.png" alt="Reactjs">
-					<img src="imagenes/logoo.png" alt="Jquery">
-					<img src="imagenes/logogit.png" alt="git">
-					<img src="imagenes/logofigma.png" alt="figma">
+					<img src="imagenes/htmllogo.png" onClick='modal(this)'  alt="logo Html" id="html">
+					<img src="imagenes/csslogo.png" onClick='modal(this)' alt="logo Css" id="css">
+					<img src="imagenes/logojs.png" onClick='modal(this)' alt="logo Js" id="js">
+					<img src="imagenes/logobootstrap.png" onClick='modal(this)' class="bootstrap" alt="Boostrap" id="boostrap">
+					<img src="imagenes/logotailwind.png" onClick='modal(this)' alt="Tailwind" id="tailwind">
+					<img src="imagenes/logoreact.png" onClick='modal(this)' alt="Reactjs" id="react">
+					<img src="imagenes/logoo.png" onClick='modal(this)' alt="Jquery" id="jquery">
+					<img src="imagenes/logogit.png" onClick='modal(this)' alt="git" id="git">
+					<img src="imagenes/logofigma.png" onClick='modal(this)' alt="figma" id="figma">
 				</div>
+					
 			</section>
+					
+					<dialog id="dialog">
+						<h3 id="titulo"></h3>
+						<img src='' alt="Certificado" id="modalCer">
+						<button onclick="cerrar()">Cerrar</button>
+					</dialog>
+
 			<a name='proyectos'/>
 			<section class="proyectos">
 				<h2>&pr; Proyectos &sc;</h2>

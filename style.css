@@ -3,7 +3,25 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+#dialog{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin:  auto;
+	text-align: center;
 
+}
+#dialog h2{
+	color: #000;
+}
+#dialog img{
+	width: 40em;
+
+}
+#titulo{
+	padding: 20px;
+}
 .content{
 	
 	background: url(imagenes/footer.jpg);
