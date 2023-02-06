@@ -88,6 +88,8 @@ main{
 main h2{
 	color: gold;
 	text-shadow: 5px 5px 5px brown;
+	margin-top: 50px;
+	font-size: 2em;
 }
 .sobre_mi{
 	margin:0px 10px;
@@ -103,11 +105,12 @@ main h2{
 	color: #84de02;
 }
 .habilidades{
-	font-size: 1.5em;
+	width: 600px;
+	margin: 0 auto;
 	text-align: center;
 }
 .habilidades img{
-	width: 200px;
+	width: 20%;
 }
 .logos{
 	display:flex;
@@ -149,7 +152,7 @@ i{
 p:first-child{
 	color: yellowgreen;
 }
-.proyecto1 h2,.proyecto2 h2 . proyecto3{
+.proyecto1 h2,.proyecto2 h2 .proyecto3 h2{
 	padding: 20px;
 	color: #ff2052;
 	text-decoration:underline;
@@ -211,6 +214,7 @@ p:first-child{
 	border-radius: 20px;
 }
 input{
+	padding: 20px 20px;
 	width: 100%;
 	height: 50px;
 	background: #f2f2f2;
@@ -220,6 +224,7 @@ input{
 	text-transform: capitalize;
 }
 textarea{
+	padding: 20px 20px;
 	width: 100%;
 	height: 80px;	
 	background: #f2f2f2;
@@ -269,6 +274,7 @@ footer p{
 .logoredes img:lastchild{
 	fill: #fff;
 }
+
 @media screen and (max-width:740px){
 	nav{
 		position: static;
