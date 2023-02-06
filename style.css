@@ -153,10 +153,7 @@ p:first-child{
 	color: yellowgreen;
 }
 .proyecto1 h2,.proyecto2 h2 .proyecto3 h2{
-	padding: 20px;
-	color: #ff2052;
-	text-decoration:underline;
-	
+	padding: 20px;	
 }
 .proyecto2{
 	background-image: url(imagenes/headerimg.jpg);
@@ -169,7 +166,7 @@ p:first-child{
 	width: 50%;
 	font-weight: bold;
 	padding: 20px;
-	color: yellow;
+	color: yellowgreen;
 	text-shadow: 3px 3px 3px #000;
 }
 .proyecto3{
