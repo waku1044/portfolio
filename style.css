@@ -235,6 +235,7 @@ background: orange;
 color: #000;
 font-weight: bold;
 font-size: 1em;
+line-height: 0;
 transition: 1s all;
 }
 #enviar:hover{
