@@ -108,7 +108,7 @@ main h2{
 	color: gold;
 	text-shadow: 5px 5px 5px brown;
 	margin-top: 50px;
-	font-size: 2em;
+	font-size: 3rem;
 }
 .sobre_mi{
 	margin:0px 10px;
@@ -129,20 +129,27 @@ main h2{
 	text-align: center;
 }
 .habilidades img{
+	max-width: 200px;
 	width: 37%;
 }
 .logos{
 	display:flex;
 	flex-wrap: wrap;
+	justify-content:space-around;
 	gap: 50px;
-	justify-content: center;
 	margin: 50px 0;
 }
 .logos img:hover{
 	opacity: .3;
 }
 .proyectos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	text-align: center;	
+	margin: 0 auto;
+	max-width: 950px;
 }
 .proyecto1 , .proyecto2, .proyecto3{
 	margin: 30px auto;
@@ -160,14 +167,6 @@ main h2{
 i{
 	color: orange;
 }
-.proyecto1 .descripcion{
-	background-color:  rgb(194 100 255 / 79%);
-	width: 70%;
-	color: yellowgreen;
-	font-weight: bold;
-	padding: 20px;
-	text-shadow: 3px 3px 5px #000;
-}
 p:first-child{
 	color: yellowgreen;
 }
@@ -180,13 +179,14 @@ p:first-child{
   background-position: center;
 	align-items: center;
 }
-.proyecto2 .descripcion , .proyecto3 .descripcion{
+.proyecto1 .descripcion ,.proyecto2 .descripcion , .proyecto3 .descripcion{
 	background-color:  rgb(194 100 255 / 79%);
 	width: 50%;
+	height: 1fr;
 	font-weight: bold;
 	padding: 20px;
-	color: yellowgreen;
-	text-shadow: 3px 3px 3px #000;
+	color: #000;
+	font-size: 1.5rem;
 }
 .proyecto3{
 	background-image: url(imagenes/encriptador.png);
@@ -195,8 +195,10 @@ p:first-child{
 	align-items: center;
 }
 .codigo-link{
+	position: relative;
+	right: 100px;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
@@ -288,10 +290,10 @@ footer p{
 	display: inline-block;
 	padding: 10px 30px;
 }
-.logoredes img:lastchild{
+/*.logoredes img:lastchild{
 	fill: #fff;
 }
-
+*/
 
 /* Responsive */
 @media screen and (max-width:740px){

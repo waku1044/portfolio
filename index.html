@@ -1,159 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="imagenes/fotoperfil1.jpg">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/fotoperfil1.jpg">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<div class="content">
-		<header>
-			<div class="fotoPerfil">
-				<img src="imagenes/fotoperfil1.jpg" alt="fotoPerfil">
-				<h3>Front-end Developer</h3>
-				
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#sobremi">Sobre mi</a></li>
-					<li><a href="#habilidades">Habilidades</a></li>
-					<li><a href="#proyectos">Proyectos</a></li>
-					<li><a href="#contacto">Contacto</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div class="menu">
-			<p>Menu</p>
-			<div class="items hidden">
-				<li><a href="#sobremi" onclick="hiddenOption(this)" >Sobre mi</a></li>
-				<li><a href="#habilidades"  onclick="hiddenOption(this)" >Habilidades</a></li>
-				<li><a href="#proyectos" onclick="hiddenOption(this)" >Proyectos</a></li>
-				<li><a href="#contacto" onclick="hiddenOption(this)" >Contacto</a></li>
-			</div>
-		</div>
-		<main>
-			
-			<a name='sobremi'/>
-			<section class="sobre_mi">
-				<h2>&pr; Sobre mi &sc;</h2>
-				<p>¡Hola! Mi nombre es <b>Walter Gimenez</b> soy de Argentina, me encanta la programacion y la creacion de diseños ,tambien me gusta practicar la mayor parte del tiempo para mejorar mis habilidades.
-				Me considero muy curioso, proactivo, puntual y responsable sin dejar de enfocarme en el proyecto.
-				Nunca dejo de aprender nuevas tecnologías y obtener nuevas experiencias en este maravilloso mundo.</p>
-
-			</section>
-			<a name='habilidades'/>
-			<section class="habilidades">
-				<h2>&pr; Habilidades &sc;</h2>
-				<div class="logos">
-					<img src="imagenes/htmllogo.png" onClick='modal(this)'  alt="logo Html" id="html">
-					<img src="imagenes/csslogo.png" onClick='modal(this)' alt="logo Css" id="css">
-					<img src="imagenes/logojs.png" onClick='modal(this)' alt="logo Js" id="js">
-					<img src="imagenes/logobootstrap.png" onClick='modal(this)' class="bootstrap" alt="Boostrap" id="boostrap">
-					<img src="imagenes/logotailwind.png" onClick='modal(this)' alt="Tailwind" id="tailwind">
-					<img src="imagenes/logoreact.png" onClick='modal(this)' alt="Reactjs" id="react">
-					<img src="imagenes/logoo.png" onClick='modal(this)' alt="Jquery" id="jquery">
-					<img src="imagenes/logogit.png" onClick='modal(this)' alt="git" id="git">
-					<img src="imagenes/logofigma.png" onClick='modal(this)' alt="figma" id="figma">
-				</div>
-					
-			</section>
-				<dialog class="hidden">
-						<h3 id="titulo"></h3>
-						<img   id="modalCer">
-						<button onClick="cerrar()">Cerrar</button>
-				</dialog>
-
-			<a name='proyectos'/>
-			<section class="proyectos">
-				<h2>&pr; Proyectos &sc;</h2>
-				<div class="proyecto1">
-					<div class="descripcion">
-						<h2>Juego de conejos</h2>
-						<p>El juego consiste en tocar los conejitos hasta llegar a 10 puntos, cada vez que se toca un conejito suma 1pt de lo contrario no suma.</p> <br><strong>Tecnologias usadas:</strong><br><i>HTML5-CSS3-JAVASCRIPT</i>
-						
-					</div>
-					<div class="codigo-link">
-						
-						<a href="https://github.com/waku1044/Juego-de-conejos" target="_blank" class="btn">Ver codigo en Github</a>
-						
-						<a href="https://waku1044.github.io/Juego-de-conejos" target="_blank" class="btn">Ir al juego</a>
-					</div>
-				</div>
-				<div class="proyecto2">						
-						<div class="codigo-link">
-							<a href="https://waku1044.github.io/Barberia-Alura/" class="btn" target="_blank">Ir a la Web</a>
-							<a href="https://github.com/waku1044/Barberia-Alura" target="_blank" class="btn">Ver codigo en Github</a>
-						</div>
-						<div class="descripcion">
-							<h2>Web Barberia Alura</h2>
-							<p>Sitio web de la Barberia Alura donde brindan informacion de sus servicios con menu de navegacion que contiene, Home - Productos - contacto. Full Responsive WEb Design</p><br><strong>Tecnologias usadas:</strong><br><i>HTML5-CSS3-JAVASCRIPT</i>
-							
-						</div>
-							
-						
-				</div>
-				<div class="proyecto3">						
-						<div class="descripcion">
-							<h2>Encriptador de texto</h2>
-							<p>Programa donde el usuario escribe una palabra o texto y se encripta con codigo predefinido por el autor, se puede copiar el texto y desencriptarlo. Full Responsive WEb Design</p><br><strong>Tecnologias usadas:</strong><br><i>HTML5-CSS3-JAVASCRIPT</i>
-							
-						</div>
-						<div class="codigo-link">
-							<a href="https://waku1044.github.io/Encriptador-grid/" class="btn" target="_blank">Ir a la Web</a>
-							<a href="https://github.com/waku1044/Encriptador-grid" target="_blank" class="btn">Ver codigo en Github</a>
-						</div>
-							
-						
-				</div>
-				
-
-
-
-			</section>
-			<a name='contacto'/>
-			<section class="contacto">
-				<h2>&pr; Contacto &sc;</h2>
-				<form action="https://formsubmit.co/walterg610@gmail.com" method="POST"" id="formulario">
-		        	<!-- <label for="nombreapellido" >Nombre y Apellido</label> -->
-		        	<input type="text" name="nombreapellido" id="nombreapellido" class="input-padron" placeholder="Nombre / Empresa" required>
-
-		        	<!-- <label for="email" >Correo Electronico</label> -->
-		        	<input type="email" name="email" id="email" placeholder="Email@dominio.com" class="input-padron" required>
-
-		        	<!-- <label for="telefono" >Teléfono</label> -->
-		        	<input type="tel" name="telefono" id="telefono" placeholder="(xx) xxxx xxxx" class="input-padron" required>
-
-	                
-	                <!-- <label for="mensaje" >Mensaje</label> -->
-	                <textarea  id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui" class="input-padron"></textarea>
-
-	                <input type="submit" value="Enviar" id="enviar">
-	                <input type="hidden" name="_next" value="https://waku1044.github.io/portfolio/">
-	                <input type="hidden" name="_captcha" value="false">
-                
+    <div class="content">
+        <header>
+            <div class="fotoPerfil">
+                <img src="imagenes/fotoperfil1.jpg" alt="fotoPerfil">
+                <h3>Front-end Developer</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="menu">
+            <p>Menu</p>
+            <div class="items hidden">
+                <li><a href="#sobremi" onclick="hiddenOption(this)">Sobre mi</a></li>
+                <li><a href="#habilidades" onclick="hiddenOption(this)">Habilidades</a></li>
+                <li><a href="#proyectos" onclick="hiddenOption(this)">Proyectos</a></li>
+                <li><a href="#contacto" onclick="hiddenOption(this)">Contacto</a></li>
+            </div>
+        </div>
+        <main>
+            <a name='sobremi' />
+            <section class="sobre_mi">
+                <h2>&pr; Sobre mi &sc;</h2>
+                <p>¡Hola! Mi nombre es <b>Walter Gimenez</b> soy de Argentina, me encanta la programacion y la creacion de diseños ,tambien me gusta practicar la mayor parte del tiempo para mejorar mis habilidades.
+                    Me considero muy curioso, proactivo, puntual y responsable sin dejar de enfocarme en el proyecto.
+                    Nunca dejo de aprender nuevas tecnologías y obtener nuevas experiencias en este maravilloso mundo.</p>
+            </section>
+            <a name='habilidades' />
+            <section class="habilidades">
+                <h2>&pr; Habilidades &sc;</h2>
+                <div class="logos">
+                    <img src="imagenes/htmllogo.png" onClick='modal(this)' alt="logo Html" id="html">
+                    <img src="imagenes/csslogo.png" onClick='modal(this)' alt="logo Css" id="css">
+                    <img src="imagenes/logojs.png" onClick='modal(this)' alt="logo Js" id="js">
+                    <img src="imagenes/logobootstrap.png" onClick='modal(this)' class="bootstrap" alt="Boostrap" id="boostrap">
+                    <img src="imagenes/logotailwind.png" onClick='modal(this)' alt="Tailwind" id="tailwind">
+                    <img src="imagenes/logoreact.png" onClick='modal(this)' alt="Reactjs" id="react">
+                    <img src="imagenes/logoo.png" onClick='modal(this)' alt="Jquery" id="jquery">
+                    <img src="imagenes/logogit.png" onClick='modal(this)' alt="git" id="git">
+                    <img src="imagenes/logofigma.png" onClick='modal(this)' alt="figma" id="figma">
+                </div>
+            </section>
+            <dialog class="hidden">
+                <h3 id="titulo"></h3>
+                <img id="modalCer">
+                <button onClick="cerrar()">Cerrar</button>
+            </dialog>
+            <a name='proyectos' />
+            <section class="proyectos">
+                <h2>&pr; Proyectos &sc;</h2>
+                <div class="proyecto1">
+                    <div class="descripcion">
+                        <h2>Juego de conejos</h2>
+                        <p>El juego consiste en tocar los conejitos hasta llegar a 10 puntos, cada vez que se toca un conejito suma 1pt de lo contrario no suma.</p> <br><strong>Tecnologias usadas:</strong><br><i>HTML5-CSS3-JAVASCRIPT</i>
+                    </div>
+                    <div class="codigo-link">
+                        <a href="https://github.com/waku1044/Juego-de-conejos" target="_blank" class="btn">Ver codigo en Github</a>
+                        <a href="https://waku1044.github.io/Juego-de-conejos" target="_blank" class="btn">Ir al juego</a>
+                    </div>
+                </div>
+                <div class="proyecto2">
+                    <div class="codigo-link">
+                        <a href="https://waku1044.github.io/Barberia-Alura/" class="btn" target="_blank">Ir a la Web</a>
+                        <a href="https://github.com/waku1044/Barberia-Alura" target="_blank" class="btn">Ver codigo en Github</a>
+                    </div>
+                    <div class="descripcion">
+                        <h2>Web Barberia Alura</h2>
+                        <p>Sitio web de la Barberia Alura donde brindan informacion de sus servicios con menu de navegacion que contiene, Home - Productos - contacto. Full Responsive WEb Design</p><br><strong>Tecnologias usadas:</strong><br><i>HTML5-CSS3-JAVASCRIPT</i>
+                    </div>
+                </div>
+                <div class="proyecto3">
+                    <div class="descripcion">
+                        <h2>Encriptador de texto</h2>
+                        <p>Programa donde el usuario escribe una palabra o texto y se encripta con codigo predefinido por el autor, se puede copiar el texto y desencriptarlo. Full Responsive WEb Design</p><br><strong>Tecnologias usadas:</strong><br><i>HTML5-CSS3-JAVASCRIPT</i>
+                    </div>
+                    <div class="codigo-link">
+                        <a href="https://waku1044.github.io/Encriptador-grid/" class="btn" target="_blank">Ir a la Web</a>
+                        <a href="https://github.com/waku1044/Encriptador-grid" target="_blank" class="btn">Ver codigo en Github</a>
+                    </div>
+                </div>
+            </section>
+            <a name='contacto' />
+            <section class="contacto">
+                <h2>&pr; Contacto &sc;</h2>
+                <form action="https://formsubmit.co/walterg610@gmail.com" method="POST" id="formulario">
+                    <!-- <label for="nombreapellido" >Nombre y Apellido</label> -->
+                    <input type="text" name="nombreapellido" id="nombreapellido" class="input-padron" placeholder="Nombre / Empresa" required>
+                    <!-- <label for="email" >Correo Electronico</label> -->
+                    <input type="email" name="email" id="email" placeholder="Email@dominio.com" class="input-padron" required>
+                    <!-- <label for="telefono" >Teléfono</label> -->
+                    <input type="tel" name="telefono" id="telefono" placeholder="(xx) xxxx xxxx" class="input-padron" required>
+                    <!-- <label for="mensaje" >Mensaje</label> -->
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui" class="input-padron"></textarea>
+                    <input type="submit" value="Enviar" id="enviar">
+                    <input type="hidden" name="_next" value="https://waku1044.github.io/portfolio/">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
-			</section>
-		</main>
-		<footer>
-			<h4>REDES</h4>
-			<div class="logoredes">
-				<a href="https://www.instagram.com/wakug44" target="_blank"><img src="imagenes/instagram.png" alt="instagram"></a>
-				<a href="https://www.linkedin.com/in/walter-gimenez-waku"><img src="imagenes/linkedin.png" alt="linkedin"></a>
-				<a href="https://github.com/waku1044"><img src="imagenes/logogithub.png" alt="github"></a>
-				
-			</div>
-			<p>
-				&copy; Todos los derechos reservados.
-			</p>
-			<p>
-				Design by <strong><i>wakutec</i></strong>
-			</p>	
-			
-		</footer>
-	</div>
-	<script src="index.js"></script>
-	
+            </section>
+        </main>
+        <footer>
+            <h4>REDES</h4>
+            <div class="logoredes">
+                <a href="https://www.instagram.com/wakug44" target="_blank"><img src="imagenes/instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/walter-gimenez-waku"><img src="imagenes/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/waku1044"><img src="imagenes/logogithub.png" alt="github"></a>
+            </div>
+            <p>
+                &copy; Todos los derechos reservados.
+            </p>
+            <p>
+                Design by <strong><i>wakutec</i></strong>
+            </p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
